@@ -16,7 +16,7 @@ public class TransformDemo {
         long startTime = System.currentTimeMillis();
 
         File srcDocPath = new File("F:\\task\\contract\\contract");
-        File dstTxtPath = new File("F:\\task\\contract\\doc2txt");
+        File dstTxtPath = new File("F:\\task\\contract\\doc2txt_new");
         File dstTxtProcessedPath = new File("F:\\task\\contract\\txt_clear");
 
         TransformService.transformDoc2Txt(srcDocPath, dstTxtPath);
@@ -24,10 +24,10 @@ public class TransformDemo {
         long usedTime = (endTime - startTime) / 1000;
         logger.info("TransformDoc2Txt time used : {}", usedTime);
 
-        startTime = System.currentTimeMillis();
-        TransformService.processTxt(dstTxtPath, dstTxtProcessedPath);
-        endTime = System.currentTimeMillis();
-        usedTime = (endTime - startTime) / 1000;
-        logger.info("ProcessTxt time used : {}", usedTime);
+//        startTime = System.currentTimeMillis();
+//        TransformService.processTxt(dstTxtPath, dstTxtProcessedPath);
+//        endTime = System.currentTimeMillis();
+//        usedTime = (endTime - startTime) / 1000;
+//        logger.info("ProcessTxt time used : {}", usedTime);
     }
 }

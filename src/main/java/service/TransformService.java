@@ -32,7 +32,7 @@ public class TransformService {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 CORE_POOL_SIZE, MAX_POOL_SIZE, KEEP_ALIVE_TIME, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(QUEUE_CAPACITY),
-                new ThreadPoolExecutor.CallerRunsPolicy());
+                new ThreadPoolExecutor.AbortPolicy());
 
         for (File docFile : docFiles) {
             executor.execute(() -> {
