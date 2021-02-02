@@ -1,4 +1,4 @@
-package sophie.document.indexer.Indexer;
+package sophie.document.indexer.indexer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;

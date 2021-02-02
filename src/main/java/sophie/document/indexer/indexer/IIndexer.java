@@ -1,4 +1,4 @@
-package sophie.document.indexer.Indexer;
+package sophie.document.indexer.indexer;
 
 import sophie.document.indexer.task.EsIndexTask;
 

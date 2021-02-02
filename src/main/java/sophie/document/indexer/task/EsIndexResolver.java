@@ -2,7 +2,7 @@ package sophie.document.indexer.task;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sophie.document.indexer.Indexer.IIndexer;
+import sophie.document.indexer.indexer.IIndexer;
 
 import java.io.IOException;
 import java.util.concurrent.LinkedBlockingQueue;
